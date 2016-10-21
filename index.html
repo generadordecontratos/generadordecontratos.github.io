@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="contratoGApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Generador de contratos</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/screen.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <div class="header">
+      <h1 class="text-center">Generador de Contratos</h1>
+    </div>
+
+  
+   <div class="container">
+     <div class="col-xs-12">
+       <contrato-component><contrato-component>
+     </div>
+   </div> 
+    
+
+    <div class="footer">
+      <div class="container">
+        <div class="col-xs-12">
+           <a target="_blank" href="http://gloui.com.ar/" class="contacto">Gloui team</a>
+        </div>
+      </div>
+    </div>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/pdfmake.min.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+     <script src="js/app.js"></script>
+     <script src="contrato/contrato.module.js"></script>
+     <script src="contrato/contrato.component.js"></script>
+     <script src="contrato/contrato.controller.js"></script>
+  </body>
+</html>

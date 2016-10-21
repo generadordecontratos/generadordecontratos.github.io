@@ -1,0 +1,172 @@
+<form ng-submit="$ctrl.contratoGenerado()">
+
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Nombre Locador:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.nombreLocador" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Documento Locador:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.documentoLocador"documen required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	</div>
+</div>
+
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Domicilio Locador:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.domicilioLocador" required>
+	</div>
+</div>
+
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Nombre Locatario:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.nombreLocatario" required>
+	</div>
+</div>
+
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Documento Locatario:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.documentoLocatario" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Domicilio del Inmueble:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.domicilioInmueble" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Cantidad de meses de locacion:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.cantidadMesesLocacion" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Desde el mes:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.mesInicioContrato" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Del año:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.anoInicioContrato" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Dia vencimiento de contrato:</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.diaVencimientoContrato" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Precio Mensual</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.precioMensual" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Domicilio de pago</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.domicilioDePago" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Interes punitorio</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.interesPunitorio" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Nombre de garante</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.nombreGarante" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Documento de garante</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.documentoGarante" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Domicilio de garante</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.domicilioGarante" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Nombre de garante alternativo</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.nombreGarante1" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Documento de garante alternativo</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.documentoGarante1" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Domicilio de garante alternativo</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.domicilioGarante1" required>
+	</div>
+</div>
+<div class="col-xs-12 grp">
+	<div class="col-xs-12 col-md-6">
+		<label for="">Deposito del locador</label>
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<input type="text" class="form-control" ng-model="$ctrl.contrato.depositoLocador" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	</div>
+</div>
+<div class="col-xs-12">
+	<button class="btn btn-default center-block btnCrear" type="submit">Crear Contrato</button>
+</div>
+
+</form>
+
+
